@@ -1,0 +1,7 @@
+# Consigne	:	Lancer un container mysql en tâche de fond. Il devra aussi pouvoir redémarrer de
+#				lui-même en cas d’erreur et faire en sorte que le mot de passe root de la base de
+#				données soit Kerrigan. Vous ferez aussi en sorte que la base de données soit stockée
+#				dans le volume hatchery, que le container crée directement une base de données
+#				qui aura comme nom zerglings et le container s’appellera spawning-pool.
+
+docker run --name spawning-pool --restart always --volume=hatchery -d -e MYSQL_ROOT_PASSWORD=Kerrigan -e MYSQL_DATABASE=zerglings mysql

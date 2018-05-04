@@ -1,0 +1,4 @@
+# Consigne	:	Consulter les logs en temps réel du container spawning-pool sans executer son
+#				shell pour autant.
+
+docker logs spawning-pool

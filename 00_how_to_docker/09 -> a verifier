@@ -1,0 +1,15 @@
+# Consigne	:	Depuis le shell d’un container debian, faire en sorte d’installer via le gestionnaire
+#				de paquets du container, de quoi compiler un code source en C et le pusher sur
+#				un repo git (en veillant avant de bien mettre à jour le gestionnaire de paquets et
+#				les paquets présents de base dans le container). Seules les commandes à effectuer
+#				dans le container sont demandées pour cet exercice.
+
+apt-get update
+apt-get upgrade
+apt-get install gcc
+apt-get install git
+git clone https://github.com/dlaurent42/init
+cd init
+git add .
+git commit -m "I do commit"
+git push
