@@ -1,0 +1,5 @@
+# Consigne	:	Lancer un service 42school/engineering-bay en 2 répliques et faire en sorte que
+#				le service fonctionne (se référer à la doc fournie dans hub.docker.com). Ce service
+#				s’appellera engineering-bay et sera sur le reseau overmind
+
+docker service create -d --hostname overmind --replicas=2 --name engineering-bay -e OC_USERNAME=docker -e OC_PASSWD=docker 42school/engineering-bay

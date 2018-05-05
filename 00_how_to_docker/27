@@ -1,0 +1,3 @@
+# Consigne	:	Récuperer les logs en continu d’une des tasks du service engineering-bay
+
+docker service logs engineering-bay

@@ -1,0 +1,3 @@
+# Consigne	:	Afficher l’ensemble des tâches du service marines.
+
+docker service logs marines

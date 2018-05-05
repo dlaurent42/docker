@@ -1,0 +1,4 @@
+# Consigne	:	Créer une autre machine virtuelle avec docker-machine utilisant le driver virtualbox
+#				et ayant pour nom Aiur
+
+docker-machine create --driver virtualbox Aiur

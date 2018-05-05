@@ -1,0 +1,5 @@
+# Consigne	:	Basculer Aiur comme esclave du swarm local où Char est leader (La commande
+#				de prise de contrôle de Aiur n’est pas demandée).
+
+eval $(docker-machine env Aiur)
+docker swarm join --token ~/.worker_token `docker-machine ip Aiur`:2377

@@ -1,0 +1,4 @@
+# Consigne	:	Supprimer l’ensemble des images de containers stocké sur la machine virtuelle
+#				Char, en une seule commande aussi.
+
+docker rmi $(docker images -q)

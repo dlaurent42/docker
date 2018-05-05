@@ -1,0 +1,4 @@
+# Consigne	:	Forcer l’arrêt et supprimer l’ensemble des containers (tous états confondus), en
+#				une seule commande.
+
+docker rm -f $(docker ps -a -q)
