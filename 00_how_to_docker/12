@@ -4,4 +4,4 @@
 #				dans le volume hatchery, que le container crée directement une base de données
 #				qui aura comme nom zerglings et le container s’appellera spawning-pool.
 
-docker run --name spawning-pool --restart always --volume=hatchery -d -e MYSQL_ROOT_PASSWORD=Kerrigan -e MYSQL_DATABASE=zerglings mysql
+docker run --name spawning-pool --restart always --volume=/var/lib/docker/volumes/hatchery -d -e MYSQL_ROOT_PASSWORD=Kerrigan -e MYSQL_DATABASE=zerglings mysql

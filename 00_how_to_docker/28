@@ -4,4 +4,4 @@
 #				sorte que le service fonctionne (se référer à la doc fournie dans hub.docker.com).
 #				Ce service s’appellera ... marines et sera sur le reseau overmind
 
-docker service create -d --hostname overmind --replicas=2 --name marines -e OC_USERNAME=docker -e OC_PASSWD=docker 42school/marine-squad
+docker service create --network overmind --replicas=2 --name marines -e OC_USERNAME=docker -e OC_PASSWD=docker 42school/marine-squad

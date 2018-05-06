@@ -5,4 +5,4 @@
 #				via un navigateur en rentrant l’adresse IP de la machine virtuelle comme URL.
 #				Bravo, vous venez de deployer un site Wordpress fonctionnel en 2 commandes !
 
-docker run --name lair --link spawning-pool:mysql -d -p `docker-machine ip Char`:8080:80 wordpress
+docker run --name lair --link spawning-pool:mysql -d -p 8080:80 wordpress

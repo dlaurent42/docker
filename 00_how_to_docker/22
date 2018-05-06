@@ -2,4 +2,4 @@
 #				de prise de contrôle de Aiur n’est pas demandée).
 
 eval $(docker-machine env Aiur)
-docker swarm join --token ~/.worker_token `docker-machine ip Aiur`:2377
+docker swarm join --token $(cat ~/.worker_token) $(docker-machine ip Char):2377

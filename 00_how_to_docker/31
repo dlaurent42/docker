@@ -1,4 +1,4 @@
 # Consigne	:	Forcer l’arrêt et supprimer l’ensemble des services sur le swarm local, en une seule
 #				commande
 
-docker service rm -f *
+docker service rm $(docker service ls -q)

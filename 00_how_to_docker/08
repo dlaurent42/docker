@@ -2,4 +2,4 @@
 #				directement interagir avec le container via votre terminal et que le container se
 #				supprime à la fin de l’exécution du shell.
 
-docker run -it --rm alpine /bin/ash
+docker run -it --rm alpine

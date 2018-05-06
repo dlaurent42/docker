@@ -3,4 +3,4 @@
 #				machine virtuelle et doit pouvoir faire en sorte d’aller explorer la base de données
 #				contenue dans le container spawning-pool.
 
-docker run --name roach-warden --link spawning-pool:mysql -d -p `docker-machine ip Char`:8081:80 phpmyadmin/phpmyadmin
+docker run --name roach-warden --link spawning-pool:db -d -p 8081:80 phpmyadmin/phpmyadmin
